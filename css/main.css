@@ -1,0 +1,308 @@
+/*reset css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*caracteristicas del fondo de body*/
+
+body{
+    background-color: #f7decc;
+
+}
+
+/*INDEX*/
+
+h1 {
+    color: #A52206;
+    font-size: 60px;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.principal{
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+    background-image: url('../img/material-cosmiatria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+}
+
+
+/*barra menu*/
+.menu{
+    background-color: #480417;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+.menu li {
+    background-color: #fa8072;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+header nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 35px;
+    text-transform: uppercase;
+}
+
+/*COSMETOLOGIA*/
+
+
+.cosme{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px;
+}
+.cosmetologia{
+    color: #A52206;
+    font-size: 50px;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+}
+
+.mainCosmetologia{
+    font-size: 40px;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    color: #A52206;
+}
+
+/*CEJAS*/
+
+.cejasPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    font-size: 35px;
+   
+}
+.lista{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    color: #A52206;
+}
+
+.mainCejas{
+    font-size: 40px;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    color: #A52206;
+}
+
+/*EPILACION CORPORAL*/
+
+.mainEpilacion{
+    font-size: 30px;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    color: #A52206;
+}
+
+.corporal{
+    margin: 15px;
+    list-style: none;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/*PESTAÑAS*/
+
+.mainPestana{
+   text-align: center;
+   font-family: 'Aguafina Script', cursive;
+   font-family: 'Moon Dance', cursive;
+   font-size: 30px;
+}
+
+.pestanaLista{
+     list-style: none;
+     text-align: center;
+     font-size: 35px;
+     font-family: 'Aguafina Script', cursive;
+     font-family: 'Moon Dance', cursive;
+
+}
+
+
+/*CONTACTO*/
+
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   font-family: 'Aguafina Script', cursive;
+   font-family: 'Moon Dance', cursive;
+   font-size: 30px;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 80px;
+}
+
+.redes{
+    display: inline-block;
+    padding: 10px;
+}
+
+
+
+
+@media screen and (max-width:400px) {
+   
+    .contenedorIndex{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "menu"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+    }
+
+    h1 {
+        color: #A52206;
+        font-size: 60px;
+        font-family: 'Aguafina Script', cursive;
+        font-family: 'Moon Dance', cursive;
+        text-align: center;
+        display: none;
+    }
+
+    .encabezado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        padding: 30px;
+        grid-area: encabezado;
+    }
+
+    .principal{
+        font-size: 30px;
+        padding: 50px;
+        text-align: center;
+        background-image: url('../img/material-cosmiatria.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        font-family: 'Aguafina Script', cursive;
+        font-family: 'Moon Dance', cursive;
+        grid-area: principal1;
+        width: auto;
+        justify-content: center;
+    }
+
+    .cosme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        background-color: #f5ac85;
+        
+        top: 0;
+        text-align: center;
+        grid-area: menu;
+          
+            
+    }
+    
+    .menu li {
+        background-color: #cc162e;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 30px;
+    }
+    
+    header nav ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin: 35px;
+        text-transform: uppercase;
+    }
+    
+    footer{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+    
+    .redes{
+        display: inline-block;
+        padding: 10px;
+    }
+  
+}
+
+@media screen and (max-width:800px) {
+   
+    .encabezado{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 80px;
+        padding: 30px;
+        grid-area: encabezado;
+        font-size: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .img{
+        height: 300px;
+    }
+
+    .cosme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
