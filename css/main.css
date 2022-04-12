@@ -9,7 +9,7 @@
 /*caracteristicas del fondo de body*/
 
 body{
-    background-color: #f7decc;
+    background-image: linear-gradient( to left, #F5B7B1, #FAE5D3);
 
 }
 
@@ -53,7 +53,7 @@ h1 {
 }
 
 .menu li {
-    background-color: #fa8072;
+    background-color: whitesmoke;
     display: inline-block;
     padding: 10px;
     margin: 10px;
@@ -63,7 +63,7 @@ h1 {
 header nav ul li a{
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: #A52206;
     margin: 35px;
     text-transform: uppercase;
 }
@@ -184,6 +184,19 @@ footer{
     padding: 10px;
 }
 
+/*transformaciones menu*/
+
+nav ul li:hover{
+    background-color: #fa8072;
+    transform: scale(1.1);
+}
+
+
+/*transformaciones img cosmetoligia*/
+
+.imgCosme:hover{
+    transform: scale(1.3);
+}
 
 
 
