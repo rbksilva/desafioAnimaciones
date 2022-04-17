@@ -45,25 +45,8 @@ h1 {
 
 
 /*barra menu*/
-.menu{
-    background-color: #480417;
-    position: sticky;
-    top: 0;
-    text-align: center;
-}
-
-.menu li {
-    background-color: whitesmoke;
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px;
-}
 
 header nav ul li a{
-    list-style: none;
-    text-decoration: none;
-    color: #A52206;
     margin: 35px;
     text-transform: uppercase;
 }
