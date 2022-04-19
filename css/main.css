@@ -27,11 +27,14 @@ h1 {
 }
 
 .principal{
-    height: 100vh;
+    height: 600px;
+    align-items: center;
     text-align: center;
     background-image: url('../img/material-cosmiatria.jpg');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    padding: 120px;
+    
 }
 
 h2{
@@ -39,9 +42,8 @@ h2{
     font-family: 'Amatic SC', cursive;
     font-family: 'Moon Dance', cursive;
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
-   
 }
 
 
@@ -52,6 +54,9 @@ header nav ul li a{
     text-transform: uppercase;
 }
 
+.corousel{
+    width: 300px;
+}
 /*COSMETOLOGIA*/
 
 
@@ -193,7 +198,8 @@ nav ul li:hover{
 
 @media screen and (max-width:600px) {
    
-    .contenedorIndex{
+    /*INDEX*/
+    .contenedor{
         height: 80vh;
         display: grid;
         grid-template-areas: "encabezado"
@@ -220,7 +226,7 @@ nav ul li:hover{
     .texto{
         display: none;
     }
-    .principal{
+    .principar1{
         font-size: 30px;
         padding: 50px;
         text-align: center;
@@ -234,6 +240,16 @@ nav ul li:hover{
         width: auto;
         justify-content: center;
         align-items: center;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    /*CEJAS*/
+
+    .video{
+        display: none;
     }
     
 
@@ -295,6 +311,10 @@ nav ul li:hover{
     h1{
         font-size: 40px;
     }
+    .texto{
+        display: none;
+    }
+
     .img{
         height: 300px;
     }
